@@ -14,4 +14,21 @@ repositories = {
       DIVISION = "gangnam style",
     }
   },
+
+  ms-test-aaaa = {
+    name                = "ms-test-aaaa"
+    description         = "teste aaa"
+    environments        = ["qa", "stg", "prd"]
+    actions             = true
+    template            = "ms-nest-template"
+    build_flows_enabled = true
+    teams_roles = {
+      product_platform = "Write + View"
+    }
+    pagerduty  = true
+    squad_name = "product_platform"
+    custom_actions_variables = {
+      DIVISION = "yape3",
+    }
+  },
 }
