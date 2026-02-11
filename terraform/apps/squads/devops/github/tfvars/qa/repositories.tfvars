@@ -1342,4 +1342,20 @@ repositories = {
       DIVISION = "yape3",
     }
   },
+
+  ms-test-testesafdsadf = {
+    name                = "ms-test-testesafdsadf"
+    description         = "teste"
+    environments        = ["qa", "stg", "prd"]
+    actions             = true
+    build_flows_enabled = true
+    teams_roles = {
+      design = "Write + View Dependabot Alerts"
+    }
+    pagerduty  = true
+    squad_name = "design"
+    custom_actions_variables = {
+      DIVISION = "yape3",
+    }
+  },
 }
