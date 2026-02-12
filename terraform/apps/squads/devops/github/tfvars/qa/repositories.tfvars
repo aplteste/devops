@@ -1390,4 +1390,20 @@ repositories = {
       DIVISION = "yape3",
     }
   },
+
+  ms-teste-v2-tesfasfsad-blank = {
+    name                = "ms-teste-v2-tesfasfsad-blank"
+    description         = "teste"
+    environments        = ["qa", "stg", "prd"]
+    actions             = true
+    build_flows_enabled = true
+    teams_roles = {
+      insurance = "Write + View Dependabot Alerts"
+    }
+    pagerduty  = true
+    squad_name = "insurance"
+    custom_actions_variables = {
+      DIVISION = "yape3",
+    }
+  },
 }
