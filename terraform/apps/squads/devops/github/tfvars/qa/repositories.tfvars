@@ -1598,4 +1598,20 @@ repositories = {
       DIVISION = "yape3",
     }
   },
+
+  ms-teste-3 = {
+    name                = "ms-teste-3"
+    description         = "ms-teste-3"
+    environments        = ["qa", "stg", "prd"]
+    actions             = true
+    build_flows_enabled = true
+    teams_roles = {
+      empresas = "Write + View Dependabot Alerts"
+    }
+    pagerduty  = true
+    squad_name = "empresas"
+    custom_actions_variables = {
+      DIVISION = "yape3",
+    }
+  },
 }
