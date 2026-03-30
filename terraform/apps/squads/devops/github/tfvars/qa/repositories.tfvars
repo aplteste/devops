@@ -1774,4 +1774,21 @@ repositories = {
       DIVISION = "yape3",
     }
   },
+
+  ms-teste-fasfasdfasd = {
+    name                = "ms-teste-fasfasdfasd"
+    description         = "teste"
+    environments        = ["qa", "stg", "prd", "promotePRD"]
+    actions             = true
+    build_flows_enabled = true
+    pagerduty           = true
+    squad_name          = "product_plataform"
+    template            = "ms-nest-template"
+    teams_roles = {
+      product_plataform = "Write + View Dependabot Alerts"
+    }
+    custom_actions_variables = {
+      DIVISION = "yape3",
+    }
+  },
 }
