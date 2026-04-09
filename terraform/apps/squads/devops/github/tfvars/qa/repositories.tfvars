@@ -1860,4 +1860,21 @@ repositories = {
       DIVISION = "yape3",
     }
   },
+
+  ms-test-normal-repo = {
+    name                = "ms-test-normal-repo"
+    description         = "Test"
+    environments        = ["qa", "stg", "prd", "promotePRD"]
+    actions             = true
+    build_flows_enabled = true
+    pagerduty           = true
+    squad_name          = "product_plataform"
+    template            = "ms-spring-template"
+    teams_roles = {
+      product_plataform = "Write + View Dependabot Alerts"
+    }
+    custom_actions_variables = {
+      DIVISION = "yape3",
+    }
+  },
 }
