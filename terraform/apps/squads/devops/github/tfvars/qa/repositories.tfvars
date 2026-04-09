@@ -1791,4 +1791,27 @@ repositories = {
       DIVISION = "yape3",
     }
   },
+
+  lib-python-test-asdfasdf = {
+    name                 = "lib-python-test-asdfasdf"
+    description          = "Teste"
+    environments         = ["qa", "stg", "prd", "promotePRD"]
+    actions              = true
+    build_flows_enabled  = true
+    is_library           = true
+    custom_approvers_PRD = ["data_approvers"]
+    pagerduty            = false
+    squad_name           = "product_plataform"
+    teams_roles = {
+      automation_data_users          = "Write + View Dependabot Alerts"
+      datachapter                    = "Write + View Dependabot Alerts"
+      data_approvers                 = "Write + View Dependabot Alerts"
+      data_engineering_reviewer      = "Write + View Dependabot Alerts"
+      analytics_engineering_reviewer = "Write + View Dependabot Alerts"
+      product_plataform              = "Write + View Dependabot Alerts"
+    }
+    custom_actions_variables = {
+      DIVISION = "yape3",
+    }
+  },
 }
