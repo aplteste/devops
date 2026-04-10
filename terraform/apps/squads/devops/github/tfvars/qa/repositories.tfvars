@@ -1917,4 +1917,20 @@ repositories = {
       DIVISION = "yape3",
     }
   },
+
+  ms-legacy2-test = {
+    name                = "ms-legacy2-test"
+    description         = "teste"
+    environments        = ["qa", "stg", "prd", "promotePRD"]
+    actions             = true
+    build_flows_enabled = true
+    pagerduty           = true
+    squad_name          = "product_platform"
+    teams_roles = {
+      product_platform = "Write + View Dependabot Alerts"
+    }
+    custom_actions_variables = {
+      DIVISION = "yape3",
+    }
+  },
 }
