@@ -1933,4 +1933,20 @@ repositories = {
       DIVISION = "yape3",
     }
   },
+
+  ms-test-repo-adsafds = {
+    name                = "ms-test-repo-adsafds"
+    description         = "TEste"
+    environments        = ["qa", "stg", "prd", "promotePRD"]
+    actions             = true
+    build_flows_enabled = true
+    pagerduty           = true
+    squad_name          = "product_platform"
+    teams_roles = {
+      product_platform = "Write + View Dependabot Alerts"
+    }
+    custom_actions_variables = {
+      DIVISION = "yape",
+    }
+  },
 }
