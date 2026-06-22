@@ -1933,4 +1933,21 @@ repositories = {
       DIVISION = "yape3",
     }
   },
+
+  ms-go-new-repo-test-3333 = {
+    name                = "ms-go-new-repo-test-3333"
+    description         = "Teste"
+    environments        = ["qa", "stg", "prd", "promotePRD"]
+    actions             = true
+    build_flows_enabled = true
+    pagerduty           = true
+    squad_name          = "product_platform"
+    template            = "ms-go-template"
+    teams_roles = {
+      product_platform = "Write + View Dependabot Alerts"
+    }
+    custom_actions_variables = {
+      DIVISION = "yape",
+    }
+  },
 }
